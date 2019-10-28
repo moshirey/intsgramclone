@@ -12,6 +12,7 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import com.parse.FindCallback;
 import com.parse.ParseException;
@@ -65,6 +66,7 @@ private ArrayAdapter arrayAdapter;
 @Override
 public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
 Intent intent=new Intent(getContext(),UsersPosts.class);
+    Toast.makeText(getContext(),"heloow",Toast.LENGTH_SHORT).show();
 intent.putExtra("username",arrayList.get(position));
 startActivity(intent);
         }
