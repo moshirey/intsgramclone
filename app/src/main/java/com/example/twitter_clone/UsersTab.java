@@ -66,7 +66,7 @@ private ArrayAdapter arrayAdapter;
 @Override
 public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
 Intent intent=new Intent(getContext(),UsersPosts.class);
-    Toast.makeText(getContext(),"heloow",Toast.LENGTH_SHORT).show();
+    Toast.makeText(getContext(),"helooww",Toast.LENGTH_SHORT).show();
 intent.putExtra("username",arrayList.get(position));
 startActivity(intent);
         }
