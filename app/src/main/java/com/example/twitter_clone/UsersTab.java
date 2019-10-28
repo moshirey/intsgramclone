@@ -64,6 +64,8 @@ private ArrayAdapter arrayAdapter;
 //on item click listerner method
 @Override
 public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
-
+Intent intent=new Intent(getContext(),UsersPosts.class);
+intent.putExtra("username",arrayList.get(position));
+startActivity(intent);
         }
         }
